@@ -1,0 +1,420 @@
+<!DOCTYPE HTML>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="user-scalable=no, initial-scale=1.0, maximum-scale=1.0"/>
+<meta name="apple-mobile-web-app-capable" content="yes"/>
+<meta name="apple-mobile-web-app-status-bar-style" content="black">
+
+<link rel="apple-touch-icon-precomposed" sizes="114x114" href="images/splash/splash-icon.png">
+<link rel="apple-touch-startup-image" href="images/splash/splash-screen.png"            media="screen and (max-device-width: 320px)" />  
+<link rel="apple-touch-startup-image" href="images/splash/splash-screen@2x.png"         media="(max-device-width: 480px) and (-webkit-min-device-pixel-ratio: 2)" /> 
+<link rel="apple-touch-startup-image" sizes="640x1096" href="images/splash/splash-screen@3x.png" />
+<link rel="apple-touch-startup-image" sizes="1024x748" href="images/splash/splash-screen-ipad-landscape" media="screen and (min-device-width : 481px) and (max-device-width : 1024px) and (orientation : landscape)" />
+<link rel="apple-touch-startup-image" sizes="768x1004" href="images/splash/splash-screen-ipad-portrait.png" media="screen and (min-device-width : 481px) and (max-device-width : 1024px) and (orientation : portrait)" />
+<link rel="apple-touch-startup-image" sizes="1536x2008" href="images/splash/splash-screen-ipad-portrait-retina.png"   media="(device-width: 768px)  and (orientation: portrait) and (-webkit-device-pixel-ratio: 2)"/>
+<link rel="apple-touch-startup-image" sizes="1496x2048" href="images/splash/splash-screen-ipad-landscape-retina.png"   media="(device-width: 768px) and (orientation: landscape)    and (-webkit-device-pixel-ratio: 2)"/>
+
+<title>Netstratum HRM</title>
+
+<link href="css/custom.css"           rel="stylesheet" type="text/css">
+<link href="css/colors/black.css"     rel="stylesheet" type="text/css">
+<link href="css/framework.css"       rel="stylesheet" type="text/css">
+<link href="css/owl.carousel.css"     rel="stylesheet" type="text/css">
+<link href="css/owl.theme.css"       rel="stylesheet" type="text/css">
+<link href="css/swipebox.css"         rel="stylesheet" type="text/css">
+<link href="css/colorbox.css"         rel="stylesheet" type="text/css">
+<link href="http://cdn.datatables.net/responsive/1.0.6/css/dataTables.responsive.css"         rel="stylesheet" type="text/css">
+<link rel="stylesheet" href="http://code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+<link rel="stylesheet" href="css/dashboard.css" id="style-resource-8">
+<script type="text/javascript" src="js/jquery.js"></script>
+<script type="text/javascript" src="js/jqueryui.js"></script>
+<script type="text/javascript" src="js/owl.carousel.min.js"></script>
+<script type="text/javascript" src="js/jquery.swipebox.js"></script>
+<script type="text/javascript" src="js/colorbox.js"></script>
+<script type="text/javascript" src="js/snap.js"></script>
+<script type="text/javascript" src="js/contact.js"></script>
+<script type="text/javascript" src="js/custom.js"></script>
+<script type="text/javascript" src="js/framework.js"></script>
+ <script src="js/jquery.validate.min.js" ></script>
+<script type="text/javascript" src="js/framework.launcher.js"></script>
+  <script src="http://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+
+<script type="text/javascript" charset="utf-8" src="cordova.js"></script>
+<script type="text/javascript" src="PushNotification.js"></script>
+<script type="text/javascript" src="js/appconfig.js"></script>
+
+</head>
+<body>
+
+<div id="preloader">
+    <div id="status">
+        <p class="center-text">
+            Loading the content...
+            <em>Loading depends on your connection speed!</em>
+        </p>
+    </div>
+</div>
+
+
+<div class="all-elements">
+    <div id="sidebar" class="page-sidebar">
+        <div class="page-sidebar-scroll">
+            
+            <div class="sidebar-controls">
+                
+                <a href="tel:04843193383" class="sidebar-call"></a>                                
+                <a href="#" class="sidebar-twit" id="logout_app"></a>                
+                <a href="#" class="sidebar-close"></a>
+            </div>  
+ 
+            <div class="sidebar-header">
+                <img class="sidebar-logo round-decoration" src="assets/images/thumb-1.png" alt="img" id="userprofimg">
+                <h4 class="center-text" id="dispname"></h4>
+                <em class="center-text">Welcome</em>                
+            </div>
+            
+            
+            
+           <div class="navigation-items" id="main-menu">
+               <div class="nav-item">
+                    <a href="dashboard_index.html" >Home</a>
+                </div>
+                 <div class="sidebar-decoration"></div>                                                                         
+                
+               
+            </div>      
+            
+                
+            
+            
+            <div id="home" style="display:none;" >
+              <div id="app-status-div">
+                <ul id="app-status-ul">
+
+                </ul>
+              </div>
+            </div>
+            
+            
+            
+            
+            <p class="sidebar-copyright center-text">Netstratum © 2015</p>
+                    
+        </div>
+    </div>
+
+
+    <div id="content" class="page-content">
+        <div class="content-controls solid-color fixed-header">
+            
+            <a href="#" class="deploy-sidebar"></a>    
+            <a href="dashboard_index.html" class="for-dash"></a>
+            <em class="content-title">ASSIGN LEAVE</em>
+            <a href="mailto:hr@netstratum.com" class="deploy-contact"></a>
+        </div>
+                     
+        <div class="content content-height">
+        	<div class="decoration"></div>
+        	<div class="one-half-responsive">
+                
+                <div class="container no-bottom">
+                    <div class="contact-form no-bottom">
+                        <div class="formSuccessMessageWrap" id="formSuccessMessageWrap">
+                            <div class="big-notification green-notification">
+                                
+                            </div>
+                        </div>
+                        <div id="assignleave">
+                        <form action="#" method="post" id="assleave">
+                            <fieldset>  
+                                <div class="formFieldWrap">
+                                    <label class="field-title" for="leave">Assign Employee:</label>
+                                    <input type="text" name="assiemp" value="" class="contactField" id="assiemp"/>
+                                    <label class="error" style="display: none;padding-left:15px;" for="assiemp"></label>
+                                </div>
+                                
+                                <div class="formFieldWrap" id="assleavetype" style="display: none;">
+                                    <label class="field-title" for="leave">Select Leave:</label>
+                                    
+                                    <select id="leavelist" name="leavelist" class="select-style">
+                                        
+                                    </select>
+                                    
+                                    <label class="error" style="display: none;padding-left:15px;" for="leavelist"></label>
+                                </div>
+                                <div class="formFieldWrap" id="asslbalance" style="display: none;">
+                                    <label class="field-title" for="leave">Leave Balance:</label>
+                                    <input type="text" name="albalance" value="" class="contactField" id="albalance"/>
+                                </div>
+                                <div class="formFieldWrap">
+                                    <label class="field-title" for="leave">From Date:</label>
+                                    <input type="text" name="assfromleave" value="" class="contactField" id="assfromleave"/>
+                                    <label class="error" style="display: none;padding-left:15px;" for="assfromleave"></label>
+                                </div>
+                                <div class="formFieldWrap">
+                                    <label class="field-title" for="leave">To Date:</label>
+                                    <input type="text" name="asstoleave" value="" class="contactField" id="asstoleave"/>
+                                    <label class="error" style="display: none;padding-left:15px;" for="asstoleave"></label>
+                                </div>
+                                <div class="formFieldWrap">
+                                    <label class="field-title" for="leave">Partial Days:</label>
+                                    <select id="asspdays" name="asspdays" class="select-style">
+                                        <option value="">--Select Partial Days--</option>    
+                                        <option value="1">Start Day Only</option>
+                                        <option value="2">End Day Only</option>
+                                        <option value="3">Start & End Day</option>
+                                    </select>                                    
+                                </div>
+                                <div class="formFieldWrap" id="assisday" style="display:none;">
+                                    <label class="field-title" for="leave">Select Start Day:</label>  
+                                        <select required="" name="assistartday" id="assistartday" class="select-style">
+                                            <option value="">--Select Startday--</option>
+                                             <option value="halfday_morning">Half Day Morning</option>
+                                             <option value="halfday_evening">Half Day Evening</option>
+                                        </select>
+                                    
+                                      <label class="error" style="display: none;padding-left:15px;" for="assistartday"></label>
+                                </div>
+                                <div class="formFieldWrap" id="asseday" style="display:none;">
+                                    <label class="field-title" for="leave">Select End Day:</label>  
+                                        <select required="" name="assendday" id="assendday" class="select-style">
+                                            <option value="">--Select Startday--</option>
+                                             <option value="halfday_morning">Half Day Morning</option>
+                                             <option value="halfday_evening">Half Day Evening</option>
+                                        </select>                                    
+                                      <label class="error" style="display: none;padding-left:15px;" for="assendday"></label>
+                                </div>
+                                <div class="formTextareaWrap">
+                                    <label class="field-title contactMessageTextarea" for="contactMessageTextarea">Reason:</label>
+                                    <textarea name="asscomments" class="contactTextarea requiredField" id="asscomments"></textarea>                                    
+                                </div>
+                                <div class="formSubmitButtonErrorsWrap">
+                                    <input type="submit" class="buttonWrap button button-green contactSubmitButton" id="contactSubmitButton" value="ASSIGN" data-formId="contactForm"/>
+                                </div>
+                            </fieldset>
+                        </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            
+            
+        </div>
+                       
+        
+        <div class="content">
+            <div class="container">
+                <div class="footer-socials">
+                    <a href="https://www.facebook.com/netstratum" class="facebook-footer"></a>                    
+                    <a href="https://twitter.com/netstratum" class="twitter-footer"></a>
+                </div>
+                <p class="copyright uppercase center-text no-bottom">Netstratum © 2015<br> All rights reserved</p>        
+            </div>
+        </div>        
+    </div>  
+</div>
+
+</body>
+</html>
+
+<script type="text/javascript">
+    $(document).ready(function() {
+        getMenu('assign_leave');
+ 
+    
+        jQuery( "#assfromleave,#asstoleave" ).click(function() {
+                        jQuery(this).blur();
+                       });
+                       
+                       
+        $("#assfromleave").datepicker();
+        $("#asstoleave").datepicker();
+        var employeeno = localStorage.getItem("empno");
+        
+        
+    function permanentholidaycallBack(){
+
+        }
+     function permanentholidayAlert() {
+
+      navigator.notification.alert(
+                    'Select any other day than holiday!',  // message
+                    permanentholidaycallBack,         // callback
+                    'No Leave assigned',            // title
+                    'Done'                  // buttonName
+                    );
+        }  
+        
+        function assignleavecallBack(){
+
+        }
+     function assignleaveAlert() {
+
+      navigator.notification.alert(
+                    'Leave assigned successfully!',  // message
+                    assignleavecallBack,         // callback
+                    'Leave assigned',            // title
+                    'Done'                  // buttonName
+                    );
+        }                                                 
+     
+        
+        
+        jQuery('#assleave').validate({
+                       rules:{
+                           assiemp:"required",
+                            assileavetype:"required",
+                            assfromleave:"required",
+                            asstoleave:"required",
+                            asstotime:"greaterThan",
+                            assendto:"greaterThan",
+                            leavelist:"required"
+                       },
+                        messages:{
+                            assiemp:"Provide an employee name",
+                            assileavetype:"Select a leave category",
+                            assfromleave:"Select from date",
+                            asstoleave:"Select to date",
+                            asstotime:"",
+                            assendto:"",
+                            required:"Select leave type"
+                        },
+                        submitHandler: function(form){
+                                $('#contactSubmitButton').prop("disabled", true);
+                                $('#contactSubmitButton').val("Saving..."); 
+                            jQuery.ajax({
+                                type: "POST",
+                                url:SITEURL+"index.php?r=Leave/Assignleave_app",
+                                data:{"params":jQuery(form).serialize(),emp_id:empnum,emplno:employeeno}
+                            }).done(function(msg)
+                            {
+                                if(msg==='holiday_error')
+                                    permanentholidayAlert();
+                                else
+                                    assignleaveAlert();
+                            
+                                $('#assiemp').val("");
+                                $('#leavelist').val("");
+                                $('#albalance').val("");
+                                $('#assfromleave').val("");
+                                $('#asstoleave').val("");
+                                $('#asspdays').val("");
+                                setTimeout(function(){
+                                    $('#contactSubmitButton').prop("disabled", false);
+                                    $('#contactSubmitButton').val("ASSIGN"); 
+                                },2000);
+                            });
+                        }
+                       
+                   });
+                   jQuery('#asspdays').change(function(event)
+                      {  //alert(ui.item);
+                        if(jQuery('#asspdays').val()==1){
+                            jQuery('#assisday').show();
+                            jQuery('#asseday').hide();
+                        }
+                        else if(jQuery('#asspdays').val()==2){
+                            jQuery('#asseday').show();
+                            jQuery('#assisday').hide();
+                        }
+                        else if(jQuery('#asspdays').val()==3){
+                            jQuery('#assisday').show();
+                            jQuery('#asseday').show();
+                        }
+                        else{
+                            jQuery('#asseday').hide();
+                            jQuery('#assisday').hide();
+                            }
+                   
+                });
+                
+                
+                
+                 $('#assiemp').autocomplete({
+                        source:SITEURL+"index.php?r=Leave/Employeelist_app",
+                        minLength: 2,
+                        select:function( event, ui ) {
+                          empnum = ui.item.id;
+                           
+                            if(jQuery('#assiemp').val()!=0)
+                                jQuery('#assleavetype').show();
+                            else
+                                jQuery('#assleavetype').hide();
+                            
+                           
+                            if(employeeno==="")
+                                return false;
+                            
+                            jQuery.ajax({
+                               type:"POST",
+                               url:SITEURL+"index.php?r=Leave/AssLeavetype",
+                               data:{assiempleave:empnum}
+                            }).done(function(msg){
+                                jQuery('#leavelist').html(msg);
+                                 jQuery('#leavelist').append('<option  value="" selected="selected" >--Select Leave--</option>');                     
+                               
+                               
+                            });
+                        }
+                    });
+                   jQuery('#leavelist').change(function(event)
+                    {
+                        if(jQuery(this).val()>0)
+                            jQuery('#asslbalance').show();
+                        else 
+                            jQuery('#asslbalance').hide();
+                        
+                        var assltype = $(this).val();
+                        
+                       
+                        if(assltype==="")
+                            return false;
+
+                        jQuery.ajax({
+                            type:"POST",
+                            url:SITEURL+"/index.php?r=Leave/Assignleavebalance_app",
+                            data:{assleavetype: assltype,empnum:empnum}
+                            }).done(function(msg) {
+                                
+                                            balvalues = msg.split('|');
+                                           jQuery('#albalance').val(balvalues[0]);
+                                           if (balvalues[1]!=''){
+                                                   balance = balvalues[1].split(',');
+                                                   availableDates= [];
+                                                   for (i=0; i<balance.length; i++)
+                                                   {
+                                                      availableDates.push('"'+balance[i]+'"');                              
+                                                   }
+                                                }
+                                            });                      
+                    });   
+               
+         
+});
+                   
+                   
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

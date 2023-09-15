@@ -1,0 +1,235 @@
+<!DOCTYPE HTML>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="user-scalable=no, initial-scale=1.0, maximum-scale=1.0"/>
+<meta name="apple-mobile-web-app-capable" content="yes"/>
+<meta name="apple-mobile-web-app-status-bar-style" content="black">
+
+<link rel="apple-touch-icon-precomposed" sizes="114x114" href="images/splash/splash-icon.png">
+<link rel="apple-touch-startup-image" href="images/splash/splash-screen.png" media="screen and (max-device-width: 320px)" />  
+<link rel="apple-touch-startup-image" href="images/splash/splash-screen@2x.png" media="(max-device-width: 480px) and (-webkit-min-device-pixel-ratio: 2)" /> 
+<link rel="apple-touch-startup-image" sizes="640x1096" href="images/splash/splash-screen@3x.png" />
+<link rel="apple-touch-startup-image" sizes="1024x748" href="images/splash/splash-screen-ipad-landscape" media="screen and (min-device-width : 481px) and (max-device-width : 1024px) and (orientation : landscape)" />
+<link rel="apple-touch-startup-image" sizes="768x1004" href="images/splash/splash-screen-ipad-portrait.png" media="screen and (min-device-width : 481px) and (max-device-width : 1024px) and (orientation : portrait)" />
+<link rel="apple-touch-startup-image" sizes="1536x2008" href="images/splash/splash-screen-ipad-portrait-retina.png"   media="(device-width: 768px)	and (orientation: portrait)	and (-webkit-device-pixel-ratio: 2)"/>
+<link rel="apple-touch-startup-image" sizes="1496x2048" href="images/splash/splash-screen-ipad-landscape-retina.png"   media="(device-width: 768px)	and (orientation: landscape)	and (-webkit-device-pixel-ratio: 2)"/>
+<title>Epsilon Mobile Framework - Version 2.0</title>
+<link href="dashboardstyle.css" rel="stylesheet" type="text/css" />
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+<style>
+ body {
+background:url(images/menu-bg.png) repeat;
+}
+</style>
+</head>
+<body>
+
+<div id="preloader">
+    <div id="status">
+        <p class="center-text">
+            Loading the content...
+            <em>Loading depends on your connection speed!</em>
+        </p>
+    </div>
+</div>
+
+
+<div class="all-elements">
+    <div id="sidebar" class="page-sidebar">
+        <div class="page-sidebar-scroll">
+            <div class="sidebar-controls">
+                
+                <a href="tel:04843193383" class="sidebar-call"></a>
+                
+                
+                <a href="#" class="sidebar-twit" id="logout_app"></a>
+                <a href="#" class="sidebar-close"></a>
+            </div>  
+ 
+            <div class="sidebar-header">
+                <img class="sidebar-logo round-decoration" src="images/general-nature/8s.jpg" alt="img" id="userprofimg">
+                <h4 class="center-text" id="dispname"></h4>
+                <em class="center-text">Welcome</em>
+            </div>
+            
+            
+            
+            <div class="navigation-items" id="main-menu">
+               <div class="nav-item">
+                    <a href="dashboard_index.html" >Home<em class="selected-nav"></em></a>
+                </div>
+                 <div class="sidebar-decoration"></div>
+              
+              
+              
+                
+               
+                
+               
+            </div>    
+            
+                 
+            
+            
+            
+            <div id="home" style="display:none;" >
+              <div id="app-status-div">
+                <ul id="app-status-ul">
+
+                </ul>
+              </div>
+            </div>
+            
+            
+            
+            
+            
+            <p class="sidebar-copyright center-text">Netstratum © 2015</p>
+               
+        </div>
+    </div>
+
+
+    <div id="content" class="page-content content-height">
+        <div class="content-controls solid-color fixed-header">
+            <a href="#" class="deploy-sidebar"></a>
+            
+            <em class="content-title">DASHBOARD</em>
+            
+            <a href="mailto:hr@netstratum.com" class="deploy-contact"></a>
+        </div>
+      
+        <div class="fixed-header-clear"></div>
+      
+        
+       
+        
+ 
+        <div class="content" id="dashboard">
+        <div class="one-half-responsive">
+         <div class="container no-bottom">
+          <div class="contact-form no-bottom"> 
+         <h4></h4>
+          
+          
+           </div>
+        </div>
+        </div>
+                                                         
+       
+       
+         <div class="container no-bottom">
+          <div class="contact-form no-bottom"> 
+              
+                      
+            
+            
+            </div>
+        </div>
+        
+            </div>
+
+     
+        
+        
+            <div class="content">
+                <div class="container">
+                    
+                    
+                </div>
+            </div>
+    </div>  
+</div>
+
+</body>
+</html>
+
+<script type="text/javascript">
+    $(document).ready(function() {
+      getMenu('dashboard_index');
+      
+      function setHeight() {
+    windowHeight = $(window).innerHeight();
+    $('.hrm-wrapper').css('min-height', windowHeight);
+  };
+  setHeight();
+   $(window).resize(function() {
+    setHeight();
+  });
+  
+ 
+			var hrmwrapper_height = $('.hrm-wrapper').prop('scrollHeight');
+	     	var hrminside_height =  $('.wrapper-inside').prop('scrollHeight');
+			$('.wrapper-inside').css('min-height',parseFloat(parseInt(hrminside_height))+'px')
+			var top_text = parseFloat(parseInt(hrmwrapper_height - hrminside_height)/2)+'px';
+ 				$('.wrapper-inside').css('margin-top',top_text);
+                                
+                                
+                                $(".hrm-button").hover(function(){
+ $(this).parent().parent().addClass("special");   
+ $(this).parent().parent().children().children('.round-image').addClass("orange-color");
+    },
+                  function(){
+                  $(this).parents().eq(1).removeClass("special");
+				  $(".round-image").removeClass("orange-color"); 
+                  });
+                  
+                  
+      
+      
+        jQuery.ajax({
+                  type:"POST",
+                  url:SITEURL+"index.php?r=Manageuser/Getdashboard",
+                  data:{empno:employeeno,emproll:roleid}
+              }).done(function(msg)
+              {   
+                   jQuery('#dashboard').html(msg);
+                  
+              });
+       
+         function getMenu(selection)
+{
+
+	jQuery.ajax({
+		method: "POST",
+		url: SITEURL+"index.php?r=Manageuser/shoappmenu",
+		data: { employeeno: employeeno,roleid:roleid,selected:selection}
+	})
+	.done(function( msg ) {
+		jQuery('#main-menu').append(msg);
+	});
+
+}      
+
+
+//$("#callno").click(function(){
+//    document.location='tel:04843193383';
+//});
+         
+});
+                   
+                   
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

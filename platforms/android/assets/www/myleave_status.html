@@ -1,0 +1,349 @@
+<!DOCTYPE HTML>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="user-scalable=no, initial-scale=1.0, maximum-scale=1.0"/>
+<meta name="apple-mobile-web-app-capable" content="yes"/>
+<meta name="apple-mobile-web-app-status-bar-style" content="black">
+
+<link rel="apple-touch-icon-precomposed" sizes="114x114" href="images/splash/splash-icon.png">
+<link rel="apple-touch-startup-image" href="images/splash/splash-screen.png"            media="screen and (max-device-width: 320px)" />  
+<link rel="apple-touch-startup-image" href="images/splash/splash-screen@2x.png"         media="(max-device-width: 480px) and (-webkit-min-device-pixel-ratio: 2)" /> 
+<link rel="apple-touch-startup-image" sizes="640x1096" href="images/splash/splash-screen@3x.png" />
+<link rel="apple-touch-startup-image" sizes="1024x748" href="images/splash/splash-screen-ipad-landscape" media="screen and (min-device-width : 481px) and (max-device-width : 1024px) and (orientation : landscape)" />
+<link rel="apple-touch-startup-image" sizes="768x1004" href="images/splash/splash-screen-ipad-portrait.png" media="screen and (min-device-width : 481px) and (max-device-width : 1024px) and (orientation : portrait)" />
+<link rel="apple-touch-startup-image" sizes="1536x2008" href="images/splash/splash-screen-ipad-portrait-retina.png"   media="(device-width: 768px)  and (orientation: portrait) and (-webkit-device-pixel-ratio: 2)"/>
+<link rel="apple-touch-startup-image" sizes="1496x2048" href="images/splash/splash-screen-ipad-landscape-retina.png"   media="(device-width: 768px) and (orientation: landscape)    and (-webkit-device-pixel-ratio: 2)"/>
+
+<title>Netstratum HRM</title>
+
+<link href="css/custom.css"           rel="stylesheet" type="text/css">
+<link href="css/colors/black.css"     rel="stylesheet" type="text/css">
+<link href="css/framework.css"       rel="stylesheet" type="text/css">
+<link href="css/owl.carousel.css"     rel="stylesheet" type="text/css">
+<link href="css/owl.theme.css"       rel="stylesheet" type="text/css">
+<link href="css/swipebox.css"         rel="stylesheet" type="text/css">
+<link href="css/colorbox.css"         rel="stylesheet" type="text/css">
+<link href="css/dataTables.responsive.css"         rel="stylesheet" type="text/css">
+ <link rel="stylesheet" href="http://code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+ 
+   <script type="text/javascript" charset="utf-8" src="cordova.js"></script>
+<script type="text/javascript" src="js/jquery.js"></script>
+<script type="text/javascript" src="js/jqueryui.js"></script>
+<script type="text/javascript" src="js/owl.carousel.min.js"></script>
+<script type="text/javascript" src="js/jquery.swipebox.js"></script>
+<script type="text/javascript" src="js/colorbox.js"></script>
+<script type="text/javascript" src="js/snap.js"></script>
+<script type="text/javascript" src="js/contact.js"></script>
+<script type="text/javascript" src="js/custom.js"></script>
+<script type="text/javascript" src="js/framework.js"></script>
+ <script src="js/jquery.validate.min.js" ></script>
+<script type="text/javascript" src="js/framework.launcher.js"></script>
+  <script src="http://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+<script type="text/javascript" src="http://cdn.datatables.net/1.10.7/js/jquery.dataTables.min.js"></script>
+<script type="text/javascript" src="http://cdn.datatables.net/responsive/1.0.6/js/dataTables.responsive.js"></script>
+<script type="text/javascript" src="http://cdn.datatables.net/plug-ins/1.10.7/pagination/four_button.js"></script>
+<script type="text/javascript" src="PushNotification.js"></script>
+  <script src="js/appconfig.js"></script>
+</head>
+<body>
+
+<div id="preloader">
+    <div id="status">
+        <p class="center-text">
+            Loading the content...
+            <em>Loading depends on your connection speed!</em>
+        </p>
+    </div>
+</div>
+
+
+<div class="all-elements">
+    <div id="sidebar" class="page-sidebar">
+        <div class="page-sidebar-scroll">
+            <div class="sidebar-controls">
+                <a href="tel:04843193383" class="sidebar-call"></a>
+                
+                
+                <a href="#" class="sidebar-twit" id="logout_app"></a>
+                <a href="#" class="sidebar-close"></a>
+            </div>  
+ 
+            <div class="sidebar-header">
+                <img class="sidebar-logo round-decoration" src="images/general-nature/8s.jpg" alt="img" id="userprofimg">
+                <h4 class="center-text" id="dispname"></h4>
+                <em class="center-text">Welcome</em>
+            </div>
+            
+            
+            
+            <div class="navigation-items" id="main-menu">
+               <div class="nav-item">
+                    <a href="dashboard_index.html" >Home</a>
+                </div>
+                 <div class="sidebar-decoration"></div>                                                                                         
+               
+            </div>    
+            
+            
+            <div id="home" style="display:none;" >
+              <div id="app-status-div">
+                <ul id="app-status-ul">
+
+                </ul>
+              </div>
+            </div>
+            
+            
+            
+            
+            
+            <p class="sidebar-copyright center-text">Netstratum © 2015</p>
+                    
+        </div>
+    </div>
+
+
+    <div id="content" class="page-content">
+        <div class="content-controls solid-color fixed-header">
+            <a href="#" class="deploy-sidebar"></a>
+            <a href="dashboard_index.html" class="for-dash"></a>
+            <em class="content-title">MY LEAVE STATUS</em>
+            
+            <a href="mailto:hr@netstratum.com" class="deploy-contact"></a>
+        </div>
+      
+        <div class="fixed-header-clear"></div>
+      
+        
+       
+        
+ 
+        <div class="content content-height" id="myleavestatus">
+        <div class="one-half-responsive">
+         <div class="container no-bottom">
+          <div class="contact-form no-bottom"> 
+         <h4></h4>
+          
+          
+           </div>
+        </div>
+        </div>
+           
+        
+       
+        
+               
+        
+       
+       
+         <div class="container no-bottom">
+          <div class="contact-form no-bottom"> 
+              
+                      <fieldset><div class="formFieldWrap">
+                                    <select name="leave_status_report" id="leave_status_myreport" class="select-style">
+                                         <option value="">Select All</option>
+                                         <option value="pending" selected="selected">Pending</option>
+                                         <option value="taken">Taken</option>
+                                         <option value="reject">Rejected</option>
+                                         <option value="approve">Scheduled</option>
+                                         <option value="cancel">Cancelled</option>
+                                     </select>
+                                </div>
+                      </fieldset>
+            
+            <table id="myreporttable" class="display no-wrap dataTable dtr-inline" cellspacing="0" width="100%" role="grid" style="width: 100%;" >          
+                <thead>
+                    <tr>
+                        <th>Leave Type</th>
+                        <th>From Date</th>
+                        
+                        <th>To Date</th>
+                        <th>Reason</th>
+                        
+                        <th>Status</th>  
+                        
+                    </tr>
+                </thead>
+            </table>
+            </div>
+        </div>
+        
+            </div>
+
+        <div style="display:none;" class="modal fade popup" id="leaveCancel" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+            <form action="#" id="leavecancelform" method="POST">
+                <div class="row">
+                    <div class="col-md-12">
+                    <div class="panel panel-primary" data-collapsed="0">
+                    <div class="modal-dialog">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        
+                        <h4 align="center" class="modal-title" id="myModalLabel">Cancel Leave</h4>
+                      </div>
+                      <div class="modal-body">
+                        <div class="control-group">
+                            <b><label for="leave" class="control-label right span4" style="float:left;">Leave Type:</label></b>
+                            <div class="controls span6" id="cancel_leave_type">
+
+                            </div>
+                        </div>
+                        <div class="control-group" >
+                            <b><label for="leave" class="control-label right span4" style="float:left;">Leave Date:</label></b>
+                            <div class="controls span6" id="cancel_leave_date">
+
+                            </div>
+                            <input type="hidden" name="cancel_leave_id" id="cancel_leave_id" value="">
+                        </div>
+                        <div class="control-group">
+                            <b><label for="leave" class="control-label right span4" style="float:left;">Reason:</label></b>
+                            <div class="controls span6">
+                                <textarea id="leave_cancel" name="leave_cancel" class="contactTextarea" value=""></textarea>
+                            </div>
+                        </div>
+                      </div>
+                      <div class="modal-footer">                                
+                        <input type="button" id="cancelpopupbtn" name="cancelpopupbtn" class='buttonWrap button button-green contactSubmitButton' value="Cancel Leave">                                                
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                </div>
+                </div>
+            </form>
+            
+        </div>
+        
+        
+            <div class="content">
+            <div class="container">
+                <div class="footer-socials">
+                    <a href="https://www.facebook.com/netstratum" class="facebook-footer"></a>                    
+                    <a href="https://twitter.com/netstratum" class="twitter-footer"></a>
+                </div>
+                       <p class="copyright uppercase center-text no-bottom">Netstratum © 2015<br> All rights reserved</p> 
+            </div>
+        </div>
+    </div>  
+</div>
+
+</body>
+</html>
+
+<script type="text/javascript">
+
+
+
+
+ $(document).ready(function() {
+           getMenu('myleave_status');
+ 
+      
+           //alert(window.location.hash);
+           if(window.location.hash==="#leavestatus") {
+              var myleaveid = localStorage.getItem("leaveid");
+              $('#leave_status_myreport').val("");
+            }
+            else{
+                
+                var myleaveid = "";
+            }
+           myreport = jQuery('#myreporttable').DataTable({
+                ajax: {"url":SITEURL+"index.php?r=Leave/Myreport_app",
+                data: function ( d ) {
+                d.myleaveid = myleaveid;
+                d.empno = employeeno;
+                d.user_role = roleid;
+                 
+          
+                d.from = jQuery('#datefrom_myreport').val();
+                d.to = jQuery('#dateto_myreport').val();
+                d.leave_status = jQuery('#leave_status_myreport').val();               
+                }
+            },
+           "serverSide": true,
+           responsive: true,
+           "lengthChange": false,
+            "searching": true,
+            "sPaginationType": "four_button",
+             "bInfo": false
+             
+                });
+           jQuery('#leave_status_myreport').change(function(){
+
+                  myreport.draw();
+
+               });           
+                    
+        
+        
+                     
+                     jQuery('#cancelpopupbtn').click(function(){
+                        jQuery('#leavecancelform').submit();
+                     });
+                     
+                     jQuery('#leavecancelform').validate({
+                         
+                         submitHandler: function(form){
+                             $('#cancelpopupbtn').prop("disabled",true);
+                             $('#cancelpopupbtn').val("cancelling...");
+                             jQuery.ajax({
+                                type:"POST",
+                                url:SITEURL+"index.php?r=Leave/Cancel_app",
+                                data:{canempono:employeeno,canempname:name,"params":jQuery(form).serialize()}
+                             }).done(function(){
+                                 myreport.draw();
+                                $('#leaveCancel').dialog( "close" );
+                                $('#leave_cancel').val("");
+                                $('#cancelpopupbtn').prop("disabled",false);
+                                $('#cancelpopupbtn').val("Cancel Leave");
+                             });
+                             
+                         }
+                     });
+
+                     
+        jQuery('#myleavestatus').on('change','.cancel',function(){        
+        $('#leaveCancel').dialog();
+        cancel_leave_id = jQuery(this).attr('id');
+       jQuery.ajax({
+         type:"POST",
+         url:SITEURL+"/index.php?r=Leave/Cancel_show",
+         data:{leaveid:jQuery(this).attr('id')}
+       }).done(function(msg)
+       {
+           var dataval = JSON.parse(msg);
+
+           jQuery('#cancel_leave_id').val(cancel_leave_id);
+           jQuery('#cancel_leave_type').html(dataval.name);
+           jQuery('#cancel_leave_date').html(dataval.start_date+" - "+dataval.end_date);                       
+
+         //  myreport.draw();
+                             
+       }); 
+    });
+} );
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

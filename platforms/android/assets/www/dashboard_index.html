@@ -1,0 +1,473 @@
+<!DOCTYPE HTML>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="user-scalable=no, initial-scale=1.0, maximum-scale=1.0"/>
+<meta name="apple-mobile-web-app-capable" content="yes"/>
+<meta name="apple-mobile-web-app-status-bar-style" content="black">
+
+<link rel="apple-touch-icon-precomposed" sizes="114x114" href="images/splash/splash-icon.png">
+<link rel="apple-touch-startup-image" href="images/splash/splash-screen.png"            media="screen and (max-device-width: 320px)" />  
+<link rel="apple-touch-startup-image" href="images/splash/splash-screen@2x.png"         media="(max-device-width: 480px) and (-webkit-min-device-pixel-ratio: 2)" /> 
+<link rel="apple-touch-startup-image" sizes="640x1096" href="images/splash/splash-screen@3x.png" />
+<link rel="apple-touch-startup-image" sizes="1024x748" href="images/splash/splash-screen-ipad-landscape" media="screen and (min-device-width : 481px) and (max-device-width : 1024px) and (orientation : landscape)" />
+<link rel="apple-touch-startup-image" sizes="768x1004" href="images/splash/splash-screen-ipad-portrait.png" media="screen and (min-device-width : 481px) and (max-device-width : 1024px) and (orientation : portrait)" />
+<link rel="apple-touch-startup-image" sizes="1536x2008" href="images/splash/splash-screen-ipad-portrait-retina.png"   media="(device-width: 768px)  and (orientation: portrait) and (-webkit-device-pixel-ratio: 2)"/>
+<link rel="apple-touch-startup-image" sizes="1496x2048" href="images/splash/splash-screen-ipad-landscape-retina.png"   media="(device-width: 768px) and (orientation: landscape)    and (-webkit-device-pixel-ratio: 2)"/>
+
+<title>Netstratum HRM</title>
+
+<link href="css/custom.css"           rel="stylesheet" type="text/css">
+<link href="css/colors/black.css"     rel="stylesheet" type="text/css">
+<link href="css/framework.css"       rel="stylesheet" type="text/css">
+<link href="css/dashboardstyle.css"       rel="stylesheet" type="text/css">
+
+<link href="css/owl.carousel.css"     rel="stylesheet" type="text/css">
+<link href="css/owl.theme.css"       rel="stylesheet" type="text/css">
+<link href="css/swipebox.css"         rel="stylesheet" type="text/css">
+<link href="css/colorbox.css"         rel="stylesheet" type="text/css">
+
+
+<link rel="stylesheet" href="css/dashboard.css" id="style-resource-8">
+<link rel="stylesheet" href="style.css" id="style-resource-8">
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+<script type="text/javascript" src="js/jqueryui.js"></script>
+<script type="text/javascript" src="js/owl.carousel.min.js"></script>
+<script type="text/javascript" src="js/jquery.swipebox.js"></script>
+<script type="text/javascript" src="js/colorbox.js"></script>
+<script type="text/javascript" src="js/snap.js"></script>
+<script type="text/javascript" src="js/contact.js"></script>
+<script type="text/javascript" src="js/custom.js"></script>
+<script type="text/javascript" src="js/framework.js"></script>
+ <script src="js/jquery.validate.min.js" ></script>
+<script type="text/javascript" src="js/framework.launcher.js"></script>
+  <script src="http://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+<script type="text/javascript" charset="utf-8" src="cordova.js"></script>
+<script type="text/javascript" src="PushNotification.js"></script>
+<script type="text/javascript" src="js/appconfig.js"></script>
+<style>
+body {
+	margin:0;
+	padding:0;
+}
+</style>
+</head>
+<body>
+
+<div id="preloader">
+    <div id="status">
+        <p class="center-text">
+            Loading the content...
+            <em>Loading depends on your connection speed!</em>
+        </p>
+    </div>
+</div>
+
+
+<div class="all-elements">
+    <div id="sidebar" class="page-sidebar">
+        <div class="page-sidebar-scroll">
+            <div class="sidebar-controls">
+                
+                <a href="tel:04843193383" class="sidebar-call"></a>
+               
+                <a href="#" class="sidebar-twit" id="logout_app"></a>
+                <a href="#" class="sidebar-close"></a>
+            </div>  
+ 
+            <div class="sidebar-header">
+                <img class="sidebar-logo round-decoration" src="images/default_android.jpg" alt="img" id="userprofimg">
+                <h4 class="center-text" id="dispname"></h4>
+                <em class="center-text">Welcome</em>
+            </div>
+            
+            
+            
+            <div class="navigation-items" id="main-menu">
+               <div class="nav-item">
+                    <a href="dashboard_index.html" >Home<em class="selected-nav"></em></a>
+                </div>
+                 <div class="sidebar-decoration"></div>
+              
+              
+              
+                
+               
+                
+               
+            </div>    
+            
+                 
+            
+            
+            
+            <div id="home" style="display:none;" >
+              <div id="app-status-div">
+                <ul id="app-status-ul">
+
+                </ul>
+              </div>
+            </div>
+            
+            
+            
+            
+            
+            <p class="sidebar-copyright center-text">Netstratum © 2015</p>
+               
+        </div>
+    </div>
+
+
+    <div id="content" class="page-content">
+        <div class="content-controls solid-color fixed-header">
+            <a href="#" class="deploy-sidebar"></a>
+            
+            <em class="content-title">DASHBOARD</em>
+            
+            <a href="mailto:hr@netstratum.com" class="deploy-contact"></a>
+        </div>
+      
+        <div class="fixed-header-clear"></div>
+      
+        
+       
+        
+ 
+        <div class="content content-height" id="dashboard">    
+            
+           
+            <div class="hrm-wrapper admin-wrap" id="admindiv" style="display:none;">
+		<div class="wrapper-inside admin-inside">
+			<div class="hrm-col-top-left">
+				<div class="hrm-col-half">
+                                    <a href="apply_leave.html" class="hrm-button left nomargin-bottom apply "></a>    
+				</div>
+    			<div class="hrm-col-half"> 
+            		<h4 class="btn-label left">Apply Leave</h4>
+    			</div>
+    			<div class="hrm-col-half">
+    				<img class="round-image top-left-round" src="images/round-img-1.png"/>    
+                        </div>   
+                        </div>
+               
+		<div class="hrm-col-top-right">
+			<div class="hrm-col-half">
+                            <a href="assign_leave.html" class="hrm-button right nomargin-bottom assign"></a>    
+			</div> 
+    		<div class="hrm-col-half"> 
+            	<h4 class="btn-label right">Assign Leave</h4>
+    		</div>
+    		<div class="hrm-col-half right">
+    			<img class="round-image top-right-round" src="images/round-img-2.png"/>    
+    		</div>   
+		</div>
+                        
+		<div class="hrm-col-bottom-left">
+    		<div class="hrm-col-half">
+    			<img class="round-image bottom-left-round" src="images/round-img-3.png"/>    
+    		</div>     
+			<div class="hrm-col-half">    
+                            <a href="employee_status.html" class="hrm-button nomargin-bottom left  status"></a>
+			</div>
+    		<div class="hrm-col-half"> 
+            	<h4 class="btn-label left">Leave Status</h4>
+    		</div>    
+		</div>                        
+		<div class="hrm-col-bottom-right">
+			<div class="hrm-col-half">
+    			<img class="round-image bottom-right-round" src="images/round-img-4.png"/>    
+    		</div> 
+			<div class="hrm-col-half">
+                            <a href="leave_balance_all.html" class="hrm-button nomargin-bottom right  balance"></a>
+			</div>
+    		<div class="hrm-col-half"> 
+            	<h4 class="btn-label right">Leave Balance</h4>
+    		</div>
+		</div>
+	</div>
+</div>
+
+
+
+
+<div class="hrm-wrapper hr-wrap" id="hrdiv" style="display:none;">
+		<div class="wrapper-inside hr-inside">
+			<div class="hrm-col-top-left">
+				<div class="hrm-col-half">
+                                    <a href="apply_leave.html" class="hrm-button left nomargin-bottom apply "></a>    
+				</div>
+    			<div class="hrm-col-half"> 
+            		<h4 class="btn-label left">Apply Leave</h4>
+    			</div>
+    			<div class="hrm-col-half">
+    				<img class="round-image top-left-round" src="images/round-img-1.png"/>    
+    		</div>   
+		</div>
+               
+		<div class="hrm-col-top-right">
+			<div class="hrm-col-half">
+                            <a href="assign_leave.html" class="hrm-button right nomargin-bottom assign"></a>    
+			</div> 
+    		<div class="hrm-col-half"> 
+            	<h4 class="btn-label right">Assign Leave</h4>
+    		</div>
+    		<div class="hrm-col-half right">
+    			<img class="round-image top-right-round" src="images/round-img-2.png"/>    
+    		</div>   
+		</div>
+                        
+		<div class="hrm-col-bottom-left">
+    		<div class="hrm-col-half">
+    			<img class="round-image bottom-left-round" src="images/round-img-3.png"/>    
+    		</div>     
+			<div class="hrm-col-half">    
+                            <a href="employee_status.html" class="hrm-button nomargin-bottom left  status"></a>
+			</div>
+    		<div class="hrm-col-half"> 
+            	<h4 class="btn-label left">Leave Status</h4>
+    		</div>    
+		</div>                        
+		<div class="hrm-col-bottom-right">
+			<div class="hrm-col-half">
+    			<img class="round-image bottom-right-round" src="images/round-img-4.png"/>    
+    		</div> 
+			<div class="hrm-col-half">
+                            <a href="leave_balance_all.html" class="hrm-button nomargin-bottom right  balance"></a>
+			</div>
+    		<div class="hrm-col-half"> 
+            	<h4 class="btn-label right">Leave Balance</h4>
+    		</div>
+		</div>
+	</div>
+</div>
+
+
+<div class="hrm-wrapper super-wrap" id="superdiv" style="display:none;">
+		<div class="wrapper-inside super-inside">
+			<div class="hrm-col-top-left">
+				<div class="hrm-col-half">
+                                    <a href="apply_leave.html" class="hrm-button left nomargin-bottom apply "></a>    
+				</div>
+    			<div class="hrm-col-half"> 
+            		<h4 class="btn-label left">Apply Leave</h4>
+    			</div>
+    			<div class="hrm-col-half">
+    				<img class="round-image top-left-round" src="images/round-img-1.png"/>    
+    		</div>   
+		</div>
+               
+		<div class="hrm-col-top-right">
+			<div class="hrm-col-half">
+                            <a href="employee_status.html" class="hrm-button right nomargin-bottom assign"></a>    
+			</div> 
+    		<div class="hrm-col-half"> 
+            	<h4 class="btn-label right">Leave Status</h4>
+    		</div>
+    		<div class="hrm-col-half right">
+    			<img class="round-image top-right-round" src="images/round-img-2.png"/>    
+    		</div>   
+		</div>
+                        
+		<div class="hrm-col-bottom-left">
+    		<div class="hrm-col-half">
+    			<img class="round-image bottom-left-round" src="images/round-img-3.png"/>    
+    		</div>     
+			<div class="hrm-col-half">    
+                            <a href="myleave_status.html" class="hrm-button nomargin-bottom left  status"></a>
+			</div>
+    		<div class="hrm-col-half"> 
+            	<h4 class="btn-label left">My Leave Status</h4>
+    		</div>    
+		</div>                        
+		<div class="hrm-col-bottom-right">
+			<div class="hrm-col-half">
+    			<img class="round-image bottom-right-round" src="images/round-img-4.png"/>    
+    		</div> 
+			<div class="hrm-col-half">
+                            <a href="leave_balance.html" class="hrm-button nomargin-bottom right  balance"></a>
+			</div>
+    		<div class="hrm-col-half"> 
+            	<h4 class="btn-label right">My Leave Balance</h4>
+    		</div>
+		</div>
+	</div>
+</div>
+
+
+<div class="hrm-wrapper emp-wrap" id="empdiv" style="display:none;">
+		<div class="wrapper-inside emp-inside">
+			<div class="hrm-col-top-left">
+				<div class="hrm-col-half">
+                                    <a href="apply_leave.html" class="hrm-button left nomargin-bottom apply "></a>    
+				</div>
+    			<div class="hrm-col-half"> 
+            		<h4 class="btn-label left">Apply Leave</h4>
+    			</div>
+    			<div class="hrm-col-half">
+    				<img class="round-image top-left-round" src="images/round-img-1.png"/>    
+    		</div>   
+		</div>
+               
+		<div class="hrm-col-top-right">
+			<div class="hrm-col-half">
+                            <a href="profile.html" class="hrm-button right nomargin-bottom assign"></a>    
+			</div> 
+    		<div class="hrm-col-half"> 
+            	<h4 class="btn-label right">My Profile</h4>
+    		</div>
+    		<div class="hrm-col-half right">
+    			<img class="round-image top-right-round" src="images/round-img-2.png"/>    
+    		</div>   
+		</div>
+                        
+		<div class="hrm-col-bottom-left">
+    		<div class="hrm-col-half">
+    			<img class="round-image bottom-left-round" src="images/round-img-3.png"/>    
+    		</div>     
+			<div class="hrm-col-half">    
+                            <a href="myleave_status.html" class="hrm-button nomargin-bottom left  status"></a>
+			</div>
+    		<div class="hrm-col-half"> 
+            	<h4 class="btn-label left">My Leave Status</h4>
+    		</div>    
+		</div>                        
+		<div class="hrm-col-bottom-right">
+			<div class="hrm-col-half">
+    			<img class="round-image bottom-right-round" src="images/round-img-4.png"/>    
+    		</div> 
+			<div class="hrm-col-half">
+                            <a href="leave_balance.html" class="hrm-button nomargin-bottom right  balance"></a>
+			</div>
+    		<div class="hrm-col-half"> 
+            	<h4 class="btn-label right">My Leave Balance</h4>
+    		</div>
+		</div>
+	</div>
+</div>
+<script type="text/javascript">
+    
+      
+    
+             
+                   
+</script>
+            
+            
+       
+        
+        </div>
+
+     
+        
+        
+            <div class="content">
+                <div class="container">
+                    
+                    
+                </div>
+            </div>
+    </div>
+     
+</div>
+   
+</body>
+</html>
+
+
+
+
+
+<script type="text/javascript">
+    
+      
+    function setHeight() {
+    windowHeight = $(window).innerHeight(); 
+    $('.hrm-wrapper').css('height', windowHeight);
+  };
+  
+    $(document).ready(function() {
+                 
+
+      getMenu('dashboard_index');
+        jQuery.ajax({
+                  type:"POST",
+                  url:SITEURL+"index.php?r=Manageuser/Getdashboard",
+                  data:{empno:employeeno,emproll:roleid}
+              }).done(function(msg)
+              {
+                  // jQuery('#dashboard').html(msg);
+             if(roleid==1){
+                 $('#admindiv').show();
+                 var hrmwrapper_height = $('.admin-wrap').prop('scrollHeight');
+                 var hrminside_height =  $('.admin-inside').height();
+             } else if(roleid==2){
+                 $('#hrdiv').show();
+                   var hrmwrapper_height = $('.hr-wrap').prop('scrollHeight');
+                 var hrminside_height =  $('.hr-inside').height();
+             } else if(msg>0){
+                 $('#superdiv').show();
+                   var hrmwrapper_height = $('.super-wrap').prop('scrollHeight');
+                 var hrminside_height =  $('.super-inside').height();
+             }else{
+                 $('#empdiv').show();
+                   var hrmwrapper_height = $('.emp-wrap').prop('scrollHeight');
+                 var hrminside_height =  $('.emp-inside').height();
+             }   
+
+  setHeight();
+   $(window).resize(function() {
+    setHeight();
+  });
+  
+			
+			var top_text = parseFloat(parseInt(hrmwrapper_height - hrminside_height)/2)+12+'px';	
+			$('.wrapper-inside').css('height',hrmwrapper_height);
+			$('.hrm-col-top-left').css('padding-top',top_text);	
+			$('.hrm-col-top-right').css('padding-top',top_text);	
+			$('.hrm-col-bottom-left').css('padding-bottom',top_text);
+			$('.hrm-col-bottom-right').css('padding-bottom',top_text);
+
+
+                                
+$(".hrm-button").hover(function(){
+ $(this).parent().parent().addClass("special");   
+ $(this).parent().parent().children().children('.round-image').addClass("orange-color");
+    },
+                  function(){
+                  $(this).parents().eq(1).removeClass("special");
+				  $(".round-image").removeClass("orange-color"); 
+                  });
+                  
+              });
+       
+            
+            
+                 
+
+});
+                   
+                   
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

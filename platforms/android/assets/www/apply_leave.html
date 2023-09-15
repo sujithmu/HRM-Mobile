@@ -1,0 +1,485 @@
+<!DOCTYPE HTML>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="user-scalable=no, initial-scale=1.0, maximum-scale=1.0"/>
+<meta name="apple-mobile-web-app-capable" content="yes"/>
+<meta name="apple-mobile-web-app-status-bar-style" content="black">
+
+<link rel="apple-touch-icon-precomposed" sizes="114x114" href="images/splash/splash-icon.png">
+<link rel="apple-touch-startup-image" href="images/splash/splash-screen.png"            media="screen and (max-device-width: 320px)" />  
+<link rel="apple-touch-startup-image" href="images/splash/splash-screen@2x.png"         media="(max-device-width: 480px) and (-webkit-min-device-pixel-ratio: 2)" /> 
+<link rel="apple-touch-startup-image" sizes="640x1096" href="images/splash/splash-screen@3x.png" />
+<link rel="apple-touch-startup-image" sizes="1024x748" href="images/splash/splash-screen-ipad-landscape" media="screen and (min-device-width : 481px) and (max-device-width : 1024px) and (orientation : landscape)" />
+<link rel="apple-touch-startup-image" sizes="768x1004" href="images/splash/splash-screen-ipad-portrait.png" media="screen and (min-device-width : 481px) and (max-device-width : 1024px) and (orientation : portrait)" />
+<link rel="apple-touch-startup-image" sizes="1536x2008" href="images/splash/splash-screen-ipad-portrait-retina.png"   media="(device-width: 768px)  and (orientation: portrait) and (-webkit-device-pixel-ratio: 2)"/>
+<link rel="apple-touch-startup-image" sizes="1496x2048" href="images/splash/splash-screen-ipad-landscape-retina.png"   media="(device-width: 768px) and (orientation: landscape)    and (-webkit-device-pixel-ratio: 2)"/>
+
+<title>Netstratum HRM</title>
+
+<link href="css/custom.css"           rel="stylesheet" type="text/css">
+<link href="css/colors/black.css"     rel="stylesheet" type="text/css">
+<link href="css/framework.css"       rel="stylesheet" type="text/css">
+<link href="css/owl.carousel.css"     rel="stylesheet" type="text/css">
+<link href="css/owl.theme.css"       rel="stylesheet" type="text/css">
+<link href="css/swipebox.css"         rel="stylesheet" type="text/css">
+<link href="css/colorbox.css"         rel="stylesheet" type="text/css">
+<link href="http://cdn.datatables.net/responsive/1.0.6/css/dataTables.responsive.css"         rel="stylesheet" type="text/css">
+<link rel="stylesheet" href="http://code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+<link rel="stylesheet" href="css/dashboard.css" id="style-resource-8">
+<script type="text/javascript" src="js/jquery.js"></script>
+<script type="text/javascript" src="js/jqueryui.js"></script>
+<script type="text/javascript" src="js/owl.carousel.min.js"></script>
+<script type="text/javascript" src="js/jquery.swipebox.js"></script>
+<script type="text/javascript" src="js/colorbox.js"></script>
+<script type="text/javascript" src="js/snap.js"></script>
+<script type="text/javascript" src="js/contact.js"></script>
+<script type="text/javascript" src="js/custom.js"></script>
+<script type="text/javascript" src="js/framework.js"></script>
+ <script src="js/jquery.validate.min.js" ></script>
+<script type="text/javascript" src="js/framework.launcher.js"></script>
+  <script src="http://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+
+<script type="text/javascript" charset="utf-8" src="cordova.js"></script>
+<script type="text/javascript" src="PushNotification.js"></script>
+<script type="text/javascript" src="js/appconfig.js"></script>
+
+
+</head>
+<body>
+
+<div id="preloader">
+    <div id="status">
+        <p class="center-text">
+            Loading the content...
+            <em>Loading depends on your connection speed!</em>
+        </p>
+    </div>
+</div>
+
+
+<div class="all-elements">
+    <div id="sidebar" class="page-sidebar">
+        <div class="page-sidebar-scroll">
+            <div class="sidebar-controls">
+                <a href="tel:04843193383" class="sidebar-call"></a>                                
+                <a href="#" class="sidebar-twit" id="logout_app"></a>                
+                <a href="#" class="sidebar-close"></a>
+            </div>  
+ 
+            <div class="sidebar-header">
+                <img class="sidebar-logo round-decoration" src="assets/images/thumb-1.png" alt="img" id="userprofimg">
+                <h4 class="center-text" id="dispname"></h4>
+                <em class="center-text">Welcome</em>                
+            </div>
+            
+            
+            
+            <div class="navigation-items" id="main-menu">
+               <div class="nav-item">
+                    <a href="dashboard_index.html" >Home</a>
+                </div>
+                 <div class="sidebar-decoration"></div>         
+                
+               
+            </div>     
+            
+            
+            <div id="home" style="display:none;" >
+              <div id="app-status-div">
+                <ul id="app-status-ul">
+
+                </ul>
+              </div>
+            </div>
+            
+            <p class="sidebar-copyright center-text">Netstratum © 2015</p>
+                   
+        </div>
+    </div>
+
+
+    <div id="content" class="page-content">
+        <div class="content-controls solid-color fixed-header">
+            
+            <a href="#" class="deploy-sidebar"></a>
+            <a href="dashboard_index.html" class="for-dash"></a>
+            <em class="content-title">APPLY LEAVE</em>
+            <a href="mailto:hr@netstratum.com" class="deploy-contact"></a>
+        </div>
+                     
+        <div class="content content-height">
+        	<div class="decoration"></div>
+        	<div class="one-half-responsive">
+                
+                <div class="container no-bottom">
+                    <div class="contact-form no-bottom"> 
+                        <div class="formSuccessMessageWrap" id="formSuccessMessageWrap">
+                            <div class="big-notification green-notification">                                
+                                
+                            </div>
+                        </div>
+                        <div id="applyleave">
+                        <form action="#" method="post" id="rleave">
+                            <fieldset>                                
+                                <div class="formFieldWrap">
+                                    <label class="field-title" for="leave">Select Leave:</label>
+                                    
+                                    <select id="leavetype" name="leavetype" class="select-style">
+                                        
+                                    </select>
+                                    <label class="error" style="display: none;padding-left:15px;" for="leavetype"></label>
+                                </div>
+                                <div class="formFieldWrap" id="leavebalance" style="display: none;">
+                                    <label class="field-title" for="leave">Leave Balance:</label>
+                                    <input type="text" name="lbalance" value="" class="contactField" id="lbalance"/>
+                                </div>
+                                <div class="formFieldWrap">
+                                    <label class="field-title" for="leave">From Date:</label>
+                                    <input type="text" name="fromleave" value="" class="contactField" id="fromleave"/>
+                                    <label class="error" style="display: none;padding-left:15px;" for="fromleave"></label>
+                                </div>
+                                <div class="formFieldWrap">
+                                    <label class="field-title" for="leave">To Date:</label>
+                                    <input type="text" name="toleave" value="" class="contactField" id="toleave"/>
+                                    <label class="error" style="display: none;padding-left:15px;" for="toleave"></label>
+                                </div>
+                                <div class="formFieldWrap">
+                                    <label class="field-title" for="leave">Partial Days:</label>
+                                    <select id="pdays" name="pdays" class="select-style">
+                                        <option value="">--Select Partial Days--</option>    
+                                        <option value="1">Start Day Only</option>
+                                        <option value="2">End Day Only</option>
+                                        <option value="3">Start & End Day</option>
+                                    </select>                                    
+                                </div>
+                                <div class="formFieldWrap" id="sday" style="display:none;">
+                                    <label class="field-title" for="leave">Select Start Day:</label>  
+                                        <select required="" name="startday" id="startday" class="select-style">
+                                            <option value="">--Select Startday--</option>
+                                             <option value="halfday_morning">Half Day Morning</option>
+                                             <option value="halfday_evening">Half Day Evening</option>
+                                        </select>
+                                    
+                                      <label class="error" style="display: none;padding-left:15px;" for="startday"></label>
+                                </div>
+                                <div class="formFieldWrap" id="eday" style="display:none;">
+                                    <label class="field-title" for="leave">Select End Day:</label>  
+                                        <select required="" name="endday" id="endday" class="select-style">
+                                            <option value="">--Select Startday--</option>
+                                             <option value="halfday_morning">Half Day Morning</option>
+                                             <option value="halfday_evening">Half Day Evening</option>
+                                        </select>                                    
+                                      <label class="error" style="display: none;padding-left:15px;" for="endday"></label>
+                                </div>
+                                <div class="formTextareaWrap">
+                                    <label class="field-title contactMessageTextarea" for="contactMessageTextarea">Reason:</label>
+                                    <textarea name="comments" class="contactTextarea requiredField" id="comments"></textarea>
+                                    <label class="error" style="display: none;padding-left:15px;" for="comments"></label>
+                                </div>
+                                <div class="formSubmitButtonErrorsWrap">
+                                    <input type="submit" class="buttonWrap button button-green contactSubmitButton" id="contactSubmitButton" value="APPLY" data-formId="contactForm"/>
+                                </div>
+                            </fieldset>
+                        </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            
+            
+        </div>
+               
+        
+        <div class="content">
+            <div class="container">
+                <div class="footer-socials">
+                    <a href="https://www.facebook.com/netstratum" class="facebook-footer"></a>                    
+                    <a href="https://www.twitter.com/netstratum" class="twitter-footer"></a>
+                </div>
+                <p class="copyright uppercase center-text no-bottom">Netstratum © 2015<br> All rights reserved</p>        
+            </div>
+        </div>
+        
+               
+    </div>  
+</div>
+
+</body>
+</html>
+
+<script type="text/javascript">
+        
+    var from_date_mand = "";
+    var availableDates = [];
+    function available(date) {
+  
+
+  dmy = date.getDate() + "-" + (date.getMonth()+1) + "-" + date.getFullYear();
+ 
+  if ($.inArray(dmy, availableDates) != -1 || availableDates=='') {
+    return [true, "","Available"];
+  } else {
+    return [false,"","unAvailable"];
+  }
+}
+    $(document).ready(function() {
+    getMenu('apply_leave');
+ 
+    $("#fromleave").datepicker({
+    minDate:0,  
+    beforeShowDay: available,     
+    onSelect:function(selected){
+        $('#toleave').datepicker("option","minDate", selected);
+ 	from_date_mand = $("#fromleave").val();        
+        }        
+    });        
+    
+    $("#toleave").datepicker({
+     onSelect: function(selected) {
+         $("#fromleave").datepicker("option","maxDate", selected);
+        }
+    });
+    
+    
+        
+        jQuery("#fromleave,#toleave").click(function() {
+                 jQuery(this).blur();                 
+                       });
+        
+        
+
+        var employeeno = localStorage.getItem("empno");
+         
+         jQuery.ajax({
+             type: "POST",             
+             url:SITEURL+"index.php?r=Leave/Userleave_app",
+             dataType: "json",
+             data: {employeeno:employeeno}
+         }).done(function(msg){
+            jQuery('#leavetype').find('option').remove();
+            jQuery('#leavetype').append('<option  value="" selected="selected" >--Select Leave--</option>');
+             
+             for(i=0;i<msg.dropdown.length;i++)                
+                jQuery('#leavetype').append('<option value="'+msg.dropdown[i].id+'">'+msg.dropdown[i].name+'</option>');
+        
+             
+
+         });    
+         
+         
+         function reqleaveAlert() {
+
+      navigator.notification.alert(
+                    'Leave applied exceeds leave balance!',  // message
+                           // callback
+                    'No balance',            // title
+                    'Done'                  // buttonName
+                    );
+     }
+     
+     function holidaycallBack(){
+
+    }
+     function holidayAlert(){
+         navigator.notification.alert(
+                'Select any other date than holiday',
+                holidaycallBack,
+                'Holiday',
+                'Done'                
+                );
+     }
+     function applyleavecallBack()
+     {
+         
+     }
+     function applyLeave(){
+         navigator.notification.alert(
+                'Successfully applied for the leave',
+                applyleavecallBack,
+                'Success',
+                'Done'                
+                );
+     }
+     function earlyleavecallback()
+     {
+         
+     }
+     function earlyleave(){
+         navigator.notification.alert(
+         'Cannot apply leave for previous date',
+         earlyleavecallback,
+         'Leave',
+         'Done'
+                );
+     }
+         
+         username = localStorage.getItem("name");
+         
+        
+        jQuery('#rleave').validate({
+        errorLabelcontainer:".error",
+         
+        rules:{
+            leavetype:"required",
+            fromleave:"required",
+            toleave:"required",
+            totime:"greaterThan",
+            endto:"greaterThan"
+        },
+
+        
+        messages:{
+            leavetype:"Select a leave category",
+            fromleave:"Select from date",
+            toleave:"Select to date",
+            totime:"",
+            endto:""  
+        },
+        submitHandler: function(form){
+            if (from_date_mand !=$("#fromleave").val())
+            {
+                earlyleave();            
+                return false;
+            }
+            $('#contactSubmitButton').prop("disabled", true);
+            $('#contactSubmitButton').val("Saving...");
+            jQuery.ajax({
+                type: "POST",
+                url:SITEURL+"index.php?r=Leave/Reqleave_app",
+                data:{"params":jQuery(form).serialize(),employeeno:employeeno,username:username}                                
+            }).done(function(msg){
+               if(msg==='balance_error')
+               {
+                  reqleaveAlert();
+                  $('#leavetype').val("");
+                $('#lbalance').val("");
+                $('#fromleave').val("");
+                $('#toleave').val("");
+                $('#pdays').val("");
+                $('#comments').val("");
+                 setTimeout(function(){
+                                     $('#contactSubmitButton').prop("disabled", false);
+                                     $('#contactSubmitButton').val("APPLY"); 
+                                 },2000);
+               }
+               else if (msg==='holiday_error')
+               {
+                   holidayAlert();
+               $('#leavetype').val("");
+               $('#lbalance').val("");
+               $('#fromleave').val("");
+               $('#toleave').val("");
+               $('#pdays').val("");
+               $('#comments').val("");
+                setTimeout(function(){
+                                    $('#contactSubmitButton').prop("disabled", false);
+                                    $('#contactSubmitButton').val("APPLY"); 
+                                },2000);
+               }
+               else{
+                   applyLeave();
+               
+               $('#leavetype').val("");
+               $('#lbalance').val("");
+               $('#fromleave').val("");
+               $('#toleave').val("");
+               $('#pdays').val("");
+               $('#comments').val("");
+                setTimeout(function(){
+                                    $('#contactSubmitButton').prop("disabled", false);
+                                    $('#contactSubmitButton').val("APPLY"); 
+                                },2000);
+               }
+            });
+        }
+        
+    });
+    
+    jQuery('#pdays').change(function(event)
+        {
+        if(jQuery('#pdays').val()==1){
+            jQuery('#sday').show();
+            jQuery('#endday').val("");
+             jQuery('#startday').val("");
+             
+            jQuery('#eday').hide();
+        }
+        else if(jQuery('#pdays').val()==2){
+            jQuery('#eday').show();
+            jQuery('#startday').val("");
+             jQuery('#endday').val("");              
+            jQuery('#sday').hide();
+        }
+        else if(jQuery('#pdays').val()==3){
+            jQuery('#sday').show();
+            jQuery('#startday').val("");
+            jQuery('#endday').val("");
+            jQuery('#eday').show();             
+        }
+        else{
+            jQuery('#eday').hide();
+            jQuery('#sday').hide();
+            }
+            
+        });
+$( "#fromleave" ).datepicker();
+$( "#toleave" ).datepicker();
+
+     jQuery('#leavetype').change(function(event)
+            {   
+              if(jQuery(this).val()>0)
+                    jQuery('#leavebalance').show();
+               else 
+                    jQuery('#leavebalance').hide();
+            
+           var ltype = jQuery(this).val(); 
+         
+           if(ltype==="")
+            return false;
+        jQuery.ajax({
+            type:"POST",
+            url:SITEURL+"index.php?r=Leave/Leavetype_app",
+            
+            data:{leavetype: ltype,employeeno:employeeno}
+        }).done(function(msg) {
+                           
+                           getvalues = msg.split('|');
+                           jQuery('#lbalance').val(getvalues[0]);
+                       if (getvalues[1]!=''){
+                           aldates = getvalues[1].split(',');
+                           availableDates= [];
+                           for (i=0; i<aldates.length; i++)
+                           {
+                              availableDates.push('"'+aldates[i]+'"');                              
+                           }
+                        }
+                    });
+                
+            }); 
+
+});
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
